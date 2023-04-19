@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Livewire\Admin\Category\CategoryList;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,8 +29,14 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+
+
 Route::get('admin/dashboard', function () {
     return view('admin.dashboard');
 })->middleware(['auth', 'admin'])->name('admin.dashboard');
+
+Route::group(['prefix' => 'admin', 'as'=>'admin.','middleware' => ['auth', 'admin']], function () {       
+           Route::get('category-list',CategoryList::class)->name('category');
+});
 
 require __DIR__ . '/auth.php';

@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('content/admin/style.css') }}">
-    <title>AdminHub</title>
+    <title>Dashboard</title>
+    @livewireStyles
 </head>
 
 <body class="scrollbarLight">
@@ -97,6 +98,6 @@
     });
 
 </script>
+@livewireScripts
 </body>
-
 </html>

@@ -34,15 +34,15 @@
         <span id="logo" class="text">Website</span>
     </a>
     <ul id="submenu" class="side-menu border-bottom pb-4 top ps-0">
-        <li class="active">
-            <a href="#">
+        <li class="{{ request()->is('admin/dashboard') ? 'active':'' }}">
+            <a href="{{ route('admin.dashboard') }}">
                 <i class="bx bxs-dashboard"></i>
                 <span class="tooltip">ToolTip</span>
                 <span class="text">Dashboard</span>
             </a>
         </li>
-        <li class="">
-            <a href="#">
+        <li class="{{ request()->is('admin/category-list') ? 'active':'' }}">
+            <a href="{{ route('admin.category') }}">
                 <i class="bx bxs-dashboard"></i>
                 <span class="tooltip">ToolTip</span>
                 <span class="text">Category</span>
