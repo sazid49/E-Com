@@ -41,52 +41,67 @@
                 <span class="text">Dashboard</span>
             </a>
         </li>
-        <li class="{{ request()->is('admin/category-list') ? 'active':'' }}">
-            <a href="{{ route('admin.category') }}">
+        <li class="{{ request()->is('admin/dashboard') ? 'active':'' }}">
+            <a href="{{ route('admin.dashboard') }}">
                 <i class="bx bxs-dashboard"></i>
                 <span class="tooltip">ToolTip</span>
-                <span class="text">Category</span>
+                <span class="text">Customer</span>
             </a>
         </li>
+
+        {{--        <li class="{{ request()->is('admin/category-list') ? 'active':'' }}">--}}
+        {{--            <a href="{{ route('admin.category') }}">--}}
+        {{--                <i class="bx bxs-dashboard"></i>--}}
+        {{--                <span class="tooltip">ToolTip</span>--}}
+        {{--                <span class="text">Category</span>--}}
+        {{--            </a>--}}
+        {{--        </li>--}}
+        {{--        <li class="{{ request()->is('admin/brand-list') ? 'active':'' }}">--}}
+        {{--            <a href="{{ route('admin.brand') }}">--}}
+        {{--                <i class="bx bxs-dashboard"></i>--}}
+        {{--                <span class="tooltip">ToolTip</span>--}}
+        {{--                <span class="text">Brand</span>--}}
+        {{--            </a>--}}
+        {{--        </li>--}}
     </ul>
     <div>
         <ul>
             <li id="submenu-1" class="d-flex justify-content-between align-items-center px-3">
-                <span>Store</span>
-                <span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </span>
+                <span>Products</span>
+                <span><i class="fa-solid fa-chevron-down"></i>  </span>
             </li>
         </ul>
         <ul id="submenu-1-open" class="side-menu border-bottom pb-3 close ps-0 mt-0">
             <li>
-                <a href="#">
+                <a href="{{ route('admin.category') }}">
                     <i class="bx bxs-shopping-bag-alt"></i>
                     <span class="tooltip">ToolTip</span>
-                    <span class="text">My Store</span>
+                    <span class="text">Category</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{ route('admin.brand') }}">
                     <i class="bx bxs-doughnut-chart"></i>
                     <span class="tooltip">ToolTip</span>
-                    <span class="text ">Analytics</span>
+                    <span class="text ">Brand</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{ route('admin.brand') }}">
+                    <i class="bx bxs-doughnut-chart"></i>
+                    <span class="tooltip">ToolTip</span>
+                    <span class="text ">Shipping Cost</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ route('admin.product') }}">
                     <i class="bx bxs-message-dots"></i>
                     <span class="tooltip">ToolTip</span>
-                    <span class="text">Message</span>
+                    <span class="text">Products</span>
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <i class="bx bxs-group"></i>
-                    <span class="tooltip">ToolTip</span>
-                    <span class="text">Team</span>
-                </a>
-            </li>
+
         </ul>
     </div>
 </section>

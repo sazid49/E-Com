@@ -4,7 +4,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between">
-                        <a href="/admin/category-list" class="btn btn-dark btn-sm">Go Back</a>
+                        <a href="/admin/brand-list" class="btn btn-dark btn-sm">Go Back</a>
                     </div>
                 </div>
                 <div class="card-body">
@@ -16,8 +16,8 @@
                         @endif
                         <div class="col-12 ">
                             <div class="input-box">
-                                <label for="name">Category Name <span>*</span></label>
-                                <input type="text" wire:model="name" placeholder="Category Name">
+                                <label for="name">Brand Name <span>*</span></label>
+                                <input type="text" wire:model="title" placeholder="Category Name">
                             </div>
                         </div>
 

@@ -4,8 +4,8 @@
             <div class="card">
                 <div class="card-header">
                     <div class="d-flex justify-content-between">
-                        <h4>Categirs List</h4></h4>
-                        <a href="/admin/category-create" class="btn btn-primary"><i class="fa-solid fa-plus"></i></a>
+                        <h4>Brand List</h4></h4>
+                        <a href="/admin/brand-create" class="btn btn-primary"><i class="fa-solid fa-plus"></i></a>
                     </div>
                 </div>
                 <div class="card-body">
@@ -23,7 +23,7 @@
 
                                     </thead>
                                     <tbody>
-                                    @foreach($category as $item)
+                                    @foreach($brand as $item)
                                         <tr>
 
                                             <td>{{ $item->title }}</td>
@@ -36,7 +36,7 @@
 
                                             </td>
                                             <td>
-                                                <a href="/admin/category-create?edit={{ $item->id }}" class="btn btn-dark btn-sm">Edit</a>
+                                                <a href="/admin/brand-create?edit={{ $item->id }}" class="btn btn-dark btn-sm">Edit</a>
                                                 <button wire:click="dataDelete({{ $item->id }})" class="btn btn-danger btn-sm">Delete</button>
                                             </td>
                                         </tr>

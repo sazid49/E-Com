@@ -265,7 +265,6 @@
 
     <section class="data-table">
         <div class="container">
-
             <div class="table">
                 <div id="" class="top-table ">
                     <div class="position-relative">
@@ -382,8 +381,6 @@
 
             </div>
         </div>
-
-
     </section>
 
     <section>
@@ -548,7 +545,7 @@
     </section>
 
 
-    <div class="overlay hidden"></div>
+
     <!-- <button class="btn btn-open">Open Modal</button> -->
 
 

@@ -17,7 +17,7 @@
 </head>
 
 <body class="scrollbarLight">
-
+   <div class="overlay hidden"></div>
 @include('layouts.admin.partials.sidebar')
 
 <div id="notification-container" class="notification-container">
@@ -58,7 +58,6 @@
       <main>
          {{ $slot }}
 {{--        <div class="overlay hidden"></div>--}}
-        <!-- <button class="btn btn-open">Open Modal</button> -->
       </main>
 
 </section>
