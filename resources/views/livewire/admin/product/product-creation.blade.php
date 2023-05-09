@@ -4,9 +4,6 @@
             <div class="title-page">
                 <h2>Create Product</h2>
             </div>
-
-
-
             <div class="col-md-8">
                 <div class="row box ">
                     <div class="col-md-12">
@@ -115,7 +112,7 @@
                 <div class="box row ">
                     <h4>Media Uploads</h4>
                     <div class="editor-box">
-                        <div class="input-box">
+                        <div class="input-box slim">
                             <input type="file">
                         </div>
                     </div>

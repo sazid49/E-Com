@@ -41,6 +41,12 @@
                 <span class="text">Dashboard</span>
             </a>
         </li>
+        <li class="{{ request()->is('admin/all-user') ? 'active':'' }}">
+            <a href="{{ route('admin.user.list') }}">
+                <i class="bx bxs-dashboard"></i>
+                <span class="text">All User</span>
+            </a>
+        </li>
         <li class="{{ request()->is('admin/dashboard') ? 'active':'' }}">
             <a href="{{ route('admin.dashboard') }}">
                 <i class="bx bxs-dashboard"></i>

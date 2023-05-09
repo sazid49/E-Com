@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('content/admin/style.css') }}">
+
+    <!--slim-->
+    <link rel="stylesheet" href="{{ asset('plugins/slim-cropping-plugin/example/css/slim.min.css') }}">
     <title>Dashboard</title>
     @livewireStyles
 </head>
@@ -67,8 +70,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+   <!--Slim-->
+   <script src="{{ asset('plugins/slim-cropping-plugin/example/js/slim.kickstart.min.js') }}"></script>
 
-<script src="{{ asset('content/admin/script.js') }}"></script>
+
+   <script src="{{ asset('content/admin/script.js') }}"></script>
 <script>
     var quill = new Quill('#editor', {
         theme: 'snow'

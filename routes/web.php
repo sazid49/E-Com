@@ -51,6 +51,8 @@ Route::group(['prefix' => 'admin', 'as'=>'admin.','middleware' => ['auth', 'admi
              Route::get('product-list',\App\Http\Livewire\Admin\Product\ProductList::class)->name('product');
             Route::get('product-create',\App\Http\Livewire\Admin\Product\ProductCreation::class)->name('product-create');
 
+            //user
+            Route::get('all-user',\App\Http\Livewire\Admin\User\AllUser::class)->name('user.list');
 });
 
 require __DIR__ . '/auth.php';
